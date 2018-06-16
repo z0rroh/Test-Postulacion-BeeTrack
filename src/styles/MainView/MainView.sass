@@ -1,0 +1,126 @@
+
+.MainViewContainer
+  padding-bottom: 40px
+  .HeaderContainer
+    padding-top: 5px
+    .SearchBarContainer
+      padding: 15 0
+      form
+        padding: 0
+      input
+        background-color: #fff
+        font-size: 10px
+        box-shadow: none
+      input:focus
+        border-color: #f1c40f
+    .NewContactContainer
+      padding: 15 0
+      div
+        padding: 0
+      button
+        background-color: #f1c40f
+        margin-right: 6px
+        font-weight: 450
+        font-size: 11px
+      .NewContactFormContainer
+        position: fixed
+        top: 0
+        left: 0
+        height: 100%
+        background: rgba(0, 0, 0, 0.6)
+        z-index: 1
+        .NewContactFormModal
+          background: #fff
+          height: auto
+          top: 42%
+          left: 50%
+          transform: translate(-50%,-50%)
+          .NewContactFormTitle
+            border-bottom: 1px solid #e9ebee
+            padding: 15px 20px
+            h1
+              font-size: 20px
+              margin: 0
+              color: #616161
+          form
+            padding: 10px 20px
+            margin: 0
+            .ElementsContainer
+              label
+                font-size: 12px
+                color: #616161
+              textarea
+                resize: none
+            .SubmitContainer
+              button
+                display: block
+                margin: 10 auto
+                width: 170px
+                padding: 5px
+
+  .UsersListContainer
+    .Loading
+      display: flex
+      justify-content: center
+      height: 100px
+      align-items: center
+    .CardTitle
+      height: 38px
+      display: flex
+      justify-content: center
+      span
+        font-size: 13px
+        font-weight: 450
+
+    .UserElementContainer
+      flex-direction: row
+      height: 50px
+      .UserIsHover::before
+        background-color: #f1c40f
+        content: ''
+        height: 100%
+        left: 0
+        position: absolute
+        width: 6px
+      .UserElement
+        border-top: none
+        justify-content: center
+        flex-direction: row
+        .UserElementImage,.UserElementName
+          padding: 0
+          display: flex
+          align-items: center
+        .UserElementImage
+          img
+            width: 40px
+            height: 40px
+        .UserElementName
+          span
+            font-size: 12px
+            font-weight: 450
+            color: #616161
+          .isHover
+            span
+              color: #f1c40f
+              font-size: 11px
+            span:hover
+              background-color: #e9ebee
+              padding: .5px 3px
+              border-radius: 3px
+              cursor: pointer
+          .isNoHovering
+            display: none
+      .UserElementDescription
+        border-top: none
+        justify-content: center
+        span
+          color: #616161
+
+  .PaginationContainer
+    padding-right: 25px
+    padding-top: 15px
+    ul
+     li
+       a:hover
+         background-color: #f1c40f
+         color: #fff
